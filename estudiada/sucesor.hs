@@ -1,0 +1,5 @@
+--calcula sucesor de un numero
+sucesor:: Int -> Int
+sucesor x = x+1
+
+main = print(sucesor 6)
