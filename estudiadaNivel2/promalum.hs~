@@ -1,0 +1,8 @@
+promalum::Integer -> [(Integer,char,[Double])] -> Double
+promalum _ [] = 0
+promalum m1 ((m2,_,parcialista):rest) = 
+	 if m1 == m2 then 
+	    sum parciallista /
+	    	fromIntegral (length parcialista)
+	 else promalum mat1 rest
+main=print(promalum 1 [(2,"bob",[9,6,7]),(1,"ferru",[9,9,10])]) 
